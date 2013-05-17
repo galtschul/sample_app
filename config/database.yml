@@ -20,6 +20,7 @@ test:
 
 production:
   adapter: postgresql
-  host: localhost
-  username: user
-  database: app-dev
+  host: gnvwizcmzgligv:WmMaIWWTGizHV8mpzLOknCThq8@ec2-23-23-214-251.compute-1.amazonaws.com
+  username: gnvwizcmzgligv
+  password: WmMaIWWTGizHV8mpzLOknCThq8
+  database: d3t3c89udd8h13
