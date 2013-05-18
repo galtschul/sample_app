@@ -4,7 +4,11 @@ gem 'rails', '3.2.13'
 gem 'pg', '0.12.2'
 
 group :development, :test do
-  gem 'rspec-rails', '2.11.0'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'childprocess'
+  gem 'spork'
 end
 
 # Gems used only for assets and not required
@@ -19,4 +23,6 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'rb-fsevent', '0.9.3', :require => false
+  gem 'growl', '1.0.3'
 end
