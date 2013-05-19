@@ -60,6 +60,16 @@ describe User do
       	end  
 	end
 
+  describe "when email doesn't downcase" do
+    let (:mixed_case) { "Test@Test.Test"}
+
+    it "should be saved as lower case" do
+      @user.email = mixed_case
+      @user.save
+      @user.reload.email.should == mixed_case.downcase
+    end
+  end
+
 	describe "when email address is already taken" do
     	before do
       		user_with_same_email = @user.dup
